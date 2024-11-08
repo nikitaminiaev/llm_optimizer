@@ -13,6 +13,7 @@ class CreatorBotWrapper:
         options = {
             "temperature": temp,
             "num_ctx": max_tokens,
+            "keep_alive": 30,
         }
         return self.ollama_client._make_ollama_request(prompt, options)
 
